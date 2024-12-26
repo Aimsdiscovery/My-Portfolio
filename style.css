@@ -33,14 +33,19 @@ section {
     color: #b91a1a;
 }
 
-.font-size-120 {
-    font-size: 120px;
+.font-size-100 {
+    font-size: 100px;
     font-weight: 800;
     line-height: 140px;
 }
 
 body .font-size-20 {
     font-size: 20px;
+    font-weight: 500;
+}
+
+body .font-size-16 {
+    font-size: 16px;
     font-weight: 500;
 }
 
