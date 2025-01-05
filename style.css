@@ -2,11 +2,31 @@
 html body {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
-    background-color: black; 
+    background-color: #fbfaf5;
 }
 
 section {
     padding: 80px;
+}
+
+.bg-topo {
+    background-image: url('background-topo.jpg');
+}
+
+.bg-red {
+    background-color: #b91a1a;
+}
+
+.bg-grey {
+    background-color: rgb(20, 20, 20);
+}
+
+.bg-linen {
+    background-color: #fbfaf5;
+}
+
+.bg-dark-linen {
+    background-color: #e7c7a7;
 }
 
 
@@ -19,18 +39,22 @@ section {
 }
 
 .button {
-    background-color: black;
+    background-color: #474d85;
     transition: 0.2s;
 }
 .button:hover {
-    background-color: #b91a1a;
-    color: black !important;
-    border-color: black !important;
+    background-color: black;
+    color: white !important;
+    border-color: white!important;
 }
 
 
 .font-color-red {
     color: #b91a1a;
+}
+
+.font-color-green {
+    color: #474d85;
 }
 
 .font-size-100 {
@@ -40,6 +64,11 @@ section {
 
 body .font-size-20 {
     font-size: 20px;
+    font-weight: 500;
+}
+
+body .font-size-12 {
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -53,6 +82,11 @@ body .font-size-16 {
     font-weight: 500;
 }
 
+body .font-size-18 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 body .font-size-40 {
     font-size: 40px;
     font-weight: 800;
@@ -60,6 +94,16 @@ body .font-size-40 {
 
 body .font-size-60 {
     font-size: 60px;
+    font-weight: 800;
+}
+
+body .font-size-50 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+body .font-size-70 {
+    font-size: 70px;
     font-weight: 800;
 }
 
@@ -83,3 +127,36 @@ body .font-size-80 {
 .letter-spacing-22 {
     letter-spacing: 22px;
 }
+
+.circle {
+    width: 360px; /* Adjust size */
+    height: 360px;
+    background-image: url('profile-pic.jpg');
+    border-radius: 50%; /* Makes it circular */
+    display: flex; /* Center the icon */
+    align-items: center;
+    justify-content: center;
+    color: white; /* Icon color */
+    font-size: 40px; /* Icon size */
+  }
+
+  .playwrite-is {
+    font-family: "Playwrite IS", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .zen-dots {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style:italic;
+  }
+
+  .rubik {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 600 !important;
+    font-style: italic;
+  }
+  
