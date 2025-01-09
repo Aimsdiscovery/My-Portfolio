@@ -5,9 +5,104 @@ html body {
     background-color: #fbfaf5;
 }
 
-section {
-    padding: 80px;
-}
+@media (max-width: 600px) {
+    section {
+      padding: 30px;
+    }
+
+    .container-fluid{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .navbar{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .font-size-80 {
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .font-size-60 {
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    .font-size-40 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .font-size-16 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .rounded-lg {
+        border-radius: 0 !important ;
+    }
+
+    .circle {
+        width: 320px; /* Adjust size */
+        height: 320px;
+        background-image: url('profile-pic.jpg');
+        border-radius: 50%; /* Makes it circular */
+        display: flex; /* Center the icon */
+        align-items: center;
+        justify-content: center;
+        color: white; /* Icon color */
+        font-size: 40px; /* Icon size */
+      }
+  }
+  
+  /* For devices with a min width of 601px (desktops and tablets) */
+  @media (min-width: 601px) {
+    section {
+      padding: 80px;
+    }
+
+    .font-size-80 {
+        font-size: 80px;
+        font-weight: 700;
+    }
+
+    .font-size-60 {
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    .font-size-40 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .font-size-16 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .rounded-lg {
+        border-radius: 2rem;
+    }
+
+    .circle {
+        width: 360px; /* Adjust size */
+        height: 360px;
+        background-image: url('profile-pic.jpg');
+        border-radius: 50%; /* Makes it circular */
+        display: flex; /* Center the icon */
+        align-items: center;
+        justify-content: center;
+        color: white; /* Icon color */
+        font-size: 40px; /* Icon size */
+      }
+  }
+
+
 
 .bg-topo {
     background-image: url('background-topo.jpg');
@@ -53,6 +148,10 @@ section {
     color: #b91a1a;
 }
 
+.font-color-linen {
+    color: #fbfaf5;
+}
+
 .font-color-green {
     color: #474d85;
 }
@@ -77,25 +176,12 @@ body .font-size-14 {
     font-weight: 500;
 }
 
-body .font-size-16 {
-    font-size: 16px;
-    font-weight: 500;
-}
 
 body .font-size-18 {
     font-size: 18px;
     font-weight: 600;
 }
 
-body .font-size-40 {
-    font-size: 40px;
-    font-weight: 800;
-}
-
-body .font-size-60 {
-    font-size: 60px;
-    font-weight: 800;
-}
 
 body .font-size-50 {
     font-size: 50px;
@@ -107,10 +193,6 @@ body .font-size-70 {
     font-weight: 800;
 }
 
-body .font-size-80 {
-    font-size: 80px;
-    font-weight: 700;
-}
 
 .height-65 {
     height: 65%;
@@ -128,17 +210,6 @@ body .font-size-80 {
     letter-spacing: 22px;
 }
 
-.circle {
-    width: 360px; /* Adjust size */
-    height: 360px;
-    background-image: url('profile-pic.jpg');
-    border-radius: 50%; /* Makes it circular */
-    display: flex; /* Center the icon */
-    align-items: center;
-    justify-content: center;
-    color: white; /* Icon color */
-    font-size: 40px; /* Icon size */
-  }
 
   .playwrite-is {
     font-family: "Playwrite IS", serif;
@@ -175,7 +246,6 @@ body .font-size-80 {
 
   .raqi {
     font-family: 'Raqillas', Arial, sans-serif;
-    font-weight: 400;
 }
 
 
