@@ -27,6 +27,7 @@ ul {
     width: 240px;
     background-color: white;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-button:hover {
@@ -36,6 +37,19 @@ ul {
 .sidebar-button:hover {
      background-color: black;
      color: white;
+}
+
+.download-button {
+    background-color: #9ca58a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
 }
 
 .icon-circle {
@@ -60,6 +74,8 @@ ul {
     height: 130px;      /* fixed size */
     object-fit: cover;  /* crop and fill the circle */
     border-radius: 50%; /* makes it circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .contact {
@@ -113,6 +129,7 @@ ul {
     text-decoration: none;   /* remove underline */
     color: inherit;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .contact-circle:hover{
