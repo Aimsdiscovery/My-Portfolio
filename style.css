@@ -1,253 +1,127 @@
-
-html body {
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    background-color: #fbfaf5;
+body, html {
+    height: 100vh;
+    margin:0;
 }
 
-@media (max-width: 600px) {
-    section {
-      padding: 30px;
-    }
-
-    .container-fluid{
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .navbar{
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .font-size-80 {
-        font-size: 34px;
-        font-weight: 700;
-    }
-
-    .font-size-60 {
-        font-size: 34px;
-        font-weight: 800;
-    }
-
-    .font-size-40 {
-        font-size: 20px;
-        font-weight: 800;
-    }
-
-    .font-size-16 {
-        font-size: 12px;
-        font-weight: 500;
-    }
-
-    .rounded-lg {
-        border-radius: 0 !important ;
-    }
-
-    .circle {
-        width: 320px; /* Adjust size */
-        height: 320px;
-        background-image: url('profile-pic.jpg');
-        border-radius: 50%; /* Makes it circular */
-        display: flex; /* Center the icon */
-        align-items: center;
-        justify-content: center;
-        color: white; /* Icon color */
-        font-size: 40px; /* Icon size */
-      }
-  }
-  
-  /* For devices with a min width of 601px (desktops and tablets) */
-  @media (min-width: 601px) {
-    section {
-      padding: 80px;
-    }
-
-    .font-size-80 {
-        font-size: 80px;
-        font-weight: 700;
-    }
-
-    .font-size-60 {
-        font-size: 60px;
-        font-weight: 800;
-    }
-
-    .font-size-40 {
-        font-size: 40px;
-        font-weight: 800;
-    }
-
-    .font-size-16 {
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    .rounded-lg {
-        border-radius: 2rem;
-    }
-
-    .circle {
-        width: 360px; /* Adjust size */
-        height: 360px;
-        background-image: url('profile-pic.jpg');
-        border-radius: 50%; /* Makes it circular */
-        display: flex; /* Center the icon */
-        align-items: center;
-        justify-content: center;
-        color: white; /* Icon color */
-        font-size: 40px; /* Icon size */
-      }
-  }
-
-
-
-.bg-topo {
-    background-image: url('background-topo.jpg');
+.sidebar {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.bg-red {
-    background-color: #b91a1a;
+ul {
+    list-style-type: none;
 }
 
-.bg-grey {
-    background-color: rgb(20, 20, 20);
+.with-bullets {
+    list-style-type: disc;
 }
 
-.bg-linen {
-    background-color: #fbfaf5;
+.content {
+    margin-left: 350px;
 }
 
-.bg-dark-linen {
-    background-color: #e7c7a7;
-}
-
-
-.nav-link {
-    transition: all 0.8s ease; 
-}
-
-.nav-link:hover {
-    color: #b91a1a !important; 
-}
-
-.button {
-    background-color: black;
-    transition: 0.2s;
-}
-.button:hover {
+.sidebar-button {
+    width: 240px;
     background-color: white;
-    color: black !important;
-    border-color: black!important;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-.font-color-red {
-    color: #b91a1a;
+.sidebar-button:hover {
+    transform: scale(1.05);
 }
 
-.font-color-linen {
-    color: #fbfaf5;
+.sidebar-button:hover {
+     background-color: black;
+     color: white;
 }
 
-.font-color-green {
-    color: #474d85;
-}
-
-.font-size-100 {
-    font-size: 100px;
-    font-weight: 800;
-}
-
-body .font-size-20 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-body .font-size-12 {
-    font-size: 12px;
-    font-weight: 500;
-}
-
-body .font-size-14 {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-
-body .font-size-18 {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-
-body .font-size-50 {
-    font-size: 50px;
-    font-weight: 800;
-}
-
-body .font-size-70 {
-    font-size: 70px;
-    font-weight: 800;
-}
-
-
-.height-65 {
-    height: 65%;
-}
-
-.height-30 {
-    height: 30%;
-}
-
-.letter-spacing {
-    letter-spacing: 4px;
-}
-
-.letter-spacing-22 {
-    letter-spacing: 22px;
-}
-
-
-  .playwrite-is {
-    font-family: "Playwrite IS", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white; /* light background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
 
-  .zen-dots {
-    font-family: "Zen Dots", serif;
-    font-weight: 400;
-    font-style:italic;
+.icon-circle:hover {
+  transform: scale(1.1);
+  background-color: #dee6cf;
+}
+
+.circle-img {
+    width: 130px;       /* fixed size */
+    height: 130px;      /* fixed size */
+    object-fit: cover;  /* crop and fill the circle */
+    border-radius: 50%; /* makes it circular */
+}
+
+.contact {
+    margin-left: 350px;
+}
+
+.exp-items, .edu-items {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.exp-items:hover,.edu-items:hover {
+  transform: scale(1.01);
+}
+
+.exp-p {
+    font-size: 13px;
+}
+
+.port-repo {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: right center;
+}
+
+.port-repo:hover {
+    transform: scaleX(1.2);
+    background-color: black;
+    color: white;
+}
+
+.bg-softerblack {
+    background-color: #9ca58a;
+}
+
+.softerblack {
+    color: #9ca58a;
+}
+
+.border-softerblack {
+    border: 2px solid #9ca58a;
+}
+
+.contact-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white; /* light background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;   /* remove underline */
+    color: inherit;
+    transition: transform 0.3s ease;
   }
 
-  .rubik {
-    font-family: "Rubik", serif;
-    font-optical-sizing: auto;
-    font-weight: 600 !important;
-    font-style: normal;
+  .contact-circle:hover{
+    transform: scale(1.1);
   }
 
-  .dancing-script {
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .great-vibes-regular {
-    font-family: "Great Vibes", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .raqi {
-    font-family: 'Raqillas', Arial, sans-serif;
+.pointer {
+    cursor: pointer; 
 }
 
 
- 
-  
+
